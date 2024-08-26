@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trading Page</h1>
+    </header>
+
+    <div class="trading-container">
+        <div class="price-display">
+            <h2>Current Price: <span id="price">1000</span> USD</h2>
+        </div>
+
+        <div class="order-form">
+            <h3>Place an Order</h3>
+            <form id="trade-form">
+                <label for="trade-type">Order Type:</label>
+                <select id="trade-type">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <label for="trade-amount">Amount:</label>
+                <input type="number" id="trade-amount" placeholder="Enter amount">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="trade-history">
+            <h3>Trade History</h3>
+            <ul id="history"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
